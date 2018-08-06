@@ -21,8 +21,8 @@ export default class Welcome extends Component {
     }).isRequired,
   };
 
-  saveSession = () => {
-    AsyncStorage.setItem('@ColaNaUrna:session', true);
+  saveSession = async () => {
+    await AsyncStorage.setItem('@ColaNaUrna:session', 'started');
   }
 
   signIn = async () => {

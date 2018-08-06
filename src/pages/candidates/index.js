@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
+import api from 'services/api';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {
+  View,
+  Text,
+  AsyncStorage,
+  ActivityIndicator,
+  FlatList,
+} from 'react-native';
+import styles from './styles';
 
-import { View } from 'react-native';
+export default class Candidates extends Component {
+  static navigationOptions = {
+    title: 'Candidates',
+    tabBarIcon: ({ tintColor }) => <Icon name="account-search" size={20} color={tintColor} />,
+  };
 
-const Candidates = () => <View />;
+  state = {
+    data: [],
+    loading: true,
+    refreshing: false,
+  }
 
-export default Candidates;
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Candidates</Text>
+      </View>
+    );
+  }
+}

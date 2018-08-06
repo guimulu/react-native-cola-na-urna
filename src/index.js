@@ -1,7 +1,11 @@
 import './config/ReactotronConfig';
+
 import React, { Component } from 'react';
+import { AsyncStorage, YellowBox } from 'react-native';
 import createNavigator from './routes';
-import { AsyncStorage } from 'react-native';
+
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
+
 
 export default class App extends Component {
   state = {
@@ -11,14 +15,13 @@ export default class App extends Component {
 
   async componentDidMount() {
     const session = await AsyncStorage.getItem('@ColaNaUrna:session');
-    console.log(session);
     this.appLoaded(session);
   }
 
   appLoaded = (session) => {
     this.setState({
       sessionChecked: true,
-      sessionLogged: session,
+      sessionLogged: !!session,
     });
   }
 
