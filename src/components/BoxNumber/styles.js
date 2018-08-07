@@ -6,18 +6,20 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     height: metrics.baseBox,
     width: metrics.baseBox,
-    padding: metrics.basePadding - 10,
+    padding: metrics.basePadding - 15,
     borderRadius: metrics.baseRadius,
     margin: metrics.baseMargin - 8,
     flex: 0,
     justifyContent: 'center',
     alignItems: 'center',
+    borderColor: colors.dark,
+    borderWidth: 1,
   },
 
   text: {
-    fontSize: 28,
+    fontSize: 36,
     fontWeight: 'bold',
-    color: colors.black,
+    color: colors.darker,
   },
 });
 

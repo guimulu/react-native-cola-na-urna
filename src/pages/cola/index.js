@@ -8,7 +8,12 @@ import {
   ActivityIndicator,
   FlatList,
 } from 'react-native';
-import BoxCandidate from 'components/BoxCandidate';
+import DeputadoEstadual from 'components/DeputadoEstadual';
+import DeputadoFederal from 'components/DeputadoFederal';
+import SenadorUm from 'components/SenadorUm';
+import SenadorDois from 'components/SenadorDois';
+import Governador from 'components/Governador';
+import Presidente from 'components/Presidente';
 import styles from './styles';
 
 export default class Cola extends Component {
@@ -26,12 +31,12 @@ export default class Cola extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <BoxCandidate />
-        <BoxCandidate />
-        <BoxCandidate />
-        <BoxCandidate />
-        <BoxCandidate />
-        <BoxCandidate />
+        <DeputadoEstadual />
+        <DeputadoFederal />
+        <SenadorUm />
+        <SenadorDois />
+        <Governador />
+        <Presidente />
       </View>
     );
   }
