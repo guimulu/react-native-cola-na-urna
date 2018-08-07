@@ -28,10 +28,10 @@ const createNavigator = (isSession = false) => StackNavigator({
         activeTintColor: colors.white,
         inactiveTintColor: colors.whiteTransparent,
         style: {
-          backgroundColor: colors.secundary,
+          backgroundColor: colors.regular,
         },
         indicatorStyle: {
-          backgroundColor: colors.regular,
+          backgroundColor: colors.dark,
         },
       },
     }),

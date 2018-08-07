@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import { TouchableOpacity } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
 
@@ -27,7 +27,7 @@ export default class AboutApp extends Component {
   render() {
     return (
       <TouchableOpacity onPress={this.goToAbout}>
-        <Icon name="info-circle" size={16} style={styles.icon} />
+        <Icon name="ios-help-circle" size={20} style={styles.icon} />
       </TouchableOpacity>
     );
   }

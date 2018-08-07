@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import api from 'services/api';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from 'react-native-vector-icons/Ionicons';
 import {
   View,
   Text,
@@ -19,7 +19,7 @@ import styles from './styles';
 export default class Cola extends Component {
   static navigationOptions = {
     title: 'Cola',
-    tabBarIcon: ({ tintColor }) => <Icon name="clipboard-list" size={20} color={tintColor} />,
+    tabBarIcon: ({ tintColor }) => <Icon name="ios-clipboard" size={20} color={tintColor} />,
   };
 
   state = {
